@@ -1,0 +1,46 @@
+{
+  "title": "Memosnag",
+  "name": "memosnag",
+  "version": "1.0.0",
+  "description": "memosnag is used to capture image and video data and urls and text from page.",
+  "main": "lib/main",
+  "id": "@Mmemosnag",
+  "author": "Gioele Sacco Comis",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "requirements": {
+    "chrome": "chrome", 
+    "sdk/content/worker": "sdk/content/worker", 
+    "sdk/page-mod": "sdk/page-mod", 
+    "sdk/panel": "sdk/panel", 
+    "sdk/self": "sdk/self", 
+    "sdk/simple-prefs": "sdk/simple-prefs", 
+    "sdk/system/unload": "sdk/system/unload", 
+    "sdk/tabs": "sdk/tabs", 
+    "sdk/timers": "sdk/timers", 
+    "sdk/ui/button/action": "sdk/ui/button/action", 
+    "sdk/util/array": "sdk/util/array", 
+    "sdk/view/core": "sdk/view/core", 
+    "sdk/window/utils": "sdk/window/utils", 
+    "sdk/windows": "sdk/windows",
+	"sdk/notifications": "sdk/notifications"
+   }, 
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "preferences": [{
+        "name": "MemosnagActive",
+        "title": "MemosnagState",
+        "description": "get boolean for active or not memosnag",
+        "type": "bool",
+        "value": true
+    }],
+  "permissions": {
+    "cross-domain-content": ["http://www.memosnag.com/"],
+	"desktop-notification": {} 
+},
+  "icon": "icon.png"
+}
